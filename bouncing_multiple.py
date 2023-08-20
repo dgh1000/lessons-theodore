@@ -7,7 +7,7 @@ SCREEN_HEIGHT = 500
 SCREEN_TITLE = "Multiple Bouncing Balls Example"
 CENTER_X = SCREEN_WIDTH // 2
 CENTER_Y = SCREEN_HEIGHT // 2
-SPEED = 2
+SPEED = 3
 
 class Ball:
     def __init__(self, position_x, position_y, speed, color):
@@ -33,8 +33,11 @@ class MyGame(arcade.Window):
 
     def __init__(self, width, height, title):
         super().__init__(width, height, title)
-        self.ball1 = Ball(random.randint(0, SCREEN_WIDTH), random.randint(0, SCREEN_HEIGHT), 2, arcade.color.RED)
-        self.ball2 = Ball(random.randint(0, SCREEN_WIDTH), random.randint(0, SCREEN_HEIGHT), 3, arcade.color.BLUE)
+        pos_x_1 = random.randint(20, SCREEN_WIDTH)
+        pos_y_1 = random.randint(24, SCREEN_HEIGHT)
+        # implicitly calls __init__
+        self.ball1 = Ball(pos_x_1, pos_y_1, 8, arcade.color.LIME)
+        self.ball2 = Ball(random.randint(0, SCREEN_WIDTH), random.randint(0, SCREEN_HEIGHT), 7, arcade.color.BLUE)
 
         # Set background color
         arcade.set_background_color(arcade.color.BLACK)

@@ -15,6 +15,8 @@ class MyGame(arcade.Window):
     def __init__(self, width, height, title):
         super().__init__(width, height, title)
 
+        # 4 pieces of memory i.e. 4 variables
+        # add a second ball we'd need to add four more variables
         self.x = random.randint(9, SCREEN_WIDTH)
         self.y = random.randint(99, SCREEN_HEIGHT)
         self.x_direction = SPEED
