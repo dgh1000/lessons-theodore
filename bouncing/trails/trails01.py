@@ -48,11 +48,16 @@ class MyGame(arcade.Window):
     def on_draw(self):
         """ Render the screen. """
 
-        # Clear screen
+        # Clears the screen
         # self.clear()
         # Draw the rectangle
-        # arcade.start_render(no_clear=True)
-        arcade.draw_rectangle_filled(CENTER_X, CENTER_Y, SCREEN_WIDTH, SCREEN_HEIGHT, (0, 0, 0, 10))
+        # 255 = opaque: can't see through it
+        # 0 = transparent
+        # 10 = almost transparent (translucent)
+        arcade.draw_rectangle_filled(CENTER_X, CENTER_Y, SCREEN_WIDTH, SCREEN_HEIGHT, (0, 0, 0, 1))
+        # arcade.color.BLACK
+        #                                                                             ^^^^^^^^^^^^^
+        #                                                                         this is the color
         self.ball1.draw()
         self.ball2.draw()
         # arcade.draw_line(self.ball1.position_x, self.ball1.position_y, self.ball2.position_x, self.ball2.position_y, arcade.color.WHITE, 1)

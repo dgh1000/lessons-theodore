@@ -75,10 +75,15 @@ class Rectangle:
         self.height = height
 
     def area(self):
-        return f"the area of the rectangle is {self.width(self.height)}"
+        return f"the area of the rectangle is {self.width*self.height}"
+    
+    def perimeter(self):
+        return "the perimeter of the rectange is " +\
+            f"{self.width+self.width+self.height+self.height}"
     
 rectangle = Rectangle(5,5)
 print(rectangle.area())
+print(rectangle.perimeter())
 # Here's an example of using the class Rectangle:
 # rectangle = Rectangle(10, 20)
 # print(rectangle.area())

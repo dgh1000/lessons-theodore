@@ -14,14 +14,42 @@
 # Here are some hints about the problem above.
 # First, let's build a string one character at 
 # a time. Uncomment this code and run it.
+# the first line was nothing then the
+# second line 
+number = 1
+# have an assignment statement, we plug into
+# the variables on the right side
+# x is 3 and y is 4, what is x + y?
+# what is the current value of number? 
+#
+# How does the computer interpret an assignment
+# statement? Always has a variable on the left
+# side of the equals. Has an expression on the
+# right side. It computes the value of the 
+# expression and makes the variable on the left
+# side equal to that value. To compute the
+# value, it plugs in the current value of
+# the variables
+x = 3
+y = 7
+z = y + x # doesn't change the answer
+#   ^ plugged in for x: current value which is
+#     3
+#       ^ plugged in for y: 7
+# 
+# + with strings
+y = "h"
+y = "e" + y
+print(y)
 
-# my_string = ""
-# my_string = "h" + my_string
-# my_string = "e" + my_string
-# my_string = "l" + my_string
-# my_string = "l" + my_string
-# my_string = "o" + my_string
-# print(my_string)
+
+my_string = "" # empty string
+my_string = "h" + my_string
+my_string = "e" + my_string
+my_string = "l" + my_string
+my_string = "l" + my_string
+my_string = "o" + my_string
+print(my_string)
 
 # Question #0: review what the + symbol does with strings. Try
 #    a few of your own examples if you'd like.
@@ -41,11 +69,14 @@
 
 # Now we'll use the loop to build a string.
 # Uncomment this code and run it.
-# other_string = "hello"
-# my_string = ""
-# for i in range(len(other_string)):
-#     my_string = my_string + other_string[i]
-# print(my_string)
+other_string = "hello"
+my_string = ""
+# effect of range()
+for i in range(len(other_string)):
+    # i goes from 0 to 4
+    print(other_string[i])
+    # my_string = my_string + other_string[i]
+print(my_string)
 
 # Question #4: Explain what the code above does. What does the
 # + symbol on line 36 do when used with strings? Look at question
