@@ -7,6 +7,7 @@
 
 # Question 1: What happens when you run this code?
 # Are you clear on why it does that?
+# It prints s which is assigned as a phrase goes here
 
 # Uncomment the following code and run it:
 
@@ -18,9 +19,9 @@
 
 # Uncomment the following code and run it:
 
-# x = 3
-# s = f"The value of x is {x}"
-# print(s)
+x = 3
+s = f"The value of x is {x}"
+print(s)
 
 # Question 3: What happens when you run this code?
 

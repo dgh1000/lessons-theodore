@@ -43,13 +43,13 @@ y = "e" + y
 print(y)
 
 
-my_string = "" # empty string
-my_string = "h" + my_string
-my_string = "e" + my_string
-my_string = "l" + my_string
-my_string = "l" + my_string
-my_string = "o" + my_string
-print(my_string)
+# my_string = "" # empty string
+# my_string = "h" + my_string
+# my_string = "e" + my_string
+# my_string = "l" + my_string
+# my_string = "l" + my_string
+# my_string = "o" + my_string
+# print(my_string)
 
 # Question #0: review what the + symbol does with strings. Try
 #    a few of your own examples if you'd like.
@@ -60,23 +60,30 @@ print(my_string)
 # First uncomment this and run it. 
 # 
 
-# other_string = "hello"
-# for i in range(len(other_string)):
-#    print(i)
+def reverser(word):
+    output_string = ''
+    for i in range(len(word)):
+        # print the character at index i
+        # print(other_string[i])
+        # add the character at index i to the output string
+        
+        output_string = word[i] + output_string 
+    return output_string
+print(reverser('abc'))
 
 # Question #3: Explain what the code above does and why it's doing that.
 # In particular review what len(other_string) does.
 
 # Now we'll use the loop to build a string.
 # Uncomment this code and run it.
-other_string = "hello"
-my_string = ""
-# effect of range()
-for i in range(len(other_string)):
-    # i goes from 0 to 4
-    print(other_string[i])
-    # my_string = my_string + other_string[i]
-print(my_string)
+# other_string = "hello"
+# my_string = ""
+# # effect of range()
+# for i in range(len(other_string)):
+#     # i goes from 0 to 4
+#     print(other_string[i])
+#     # my_string = my_string + other_string[i]
+# print(my_string)
 
 # Question #4: Explain what the code above does. What does the
 # + symbol on line 36 do when used with strings? Look at question

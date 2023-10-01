@@ -5,6 +5,7 @@
 
 # Question 1: what happens when you run this code?
 # Are you clear on why it works?
+# It works by printing the input of the answer "Type your name"
 
 # Uncomment the following code and run it:
 
@@ -22,18 +23,25 @@
 # Question 4: what happens if you type "alex"?
 
 # Uncomment the following code and run it
-# weapon = input("What weapon do you want? ")
-# creature = input("What creature do you want to fight? ")
-# if weapon == "sword":
-#     if creature == "dragon":
-#         print("You slay the dragon!")
-#     else:
-#         print("You are unable to kill the creature with your sword.")
-# elif weapon == "bow":
-#     if creature == "dragon":
-#         print("bows don't work against dragons")
-#     else:
-#         print("You kill the creature with your bow.")
+weapon = input("What weapon do you want? ")
+creature = input("What creature do you want to fight? ")
+if weapon == "sword":
+    if creature == "dragon":
+        print("You slay the dragon!")
+    else:
+        print(f'a single string')
+        print('You are unable to kill the '+ creature + ' with your ' + weapon)
+
+elif weapon == "bow":
+    if creature == "dragon":
+        print("bows don't work against dragons")
+    else:
+        print("You kill the creature with your bow.")
+else:
+    print(f'You are unable to kill the {creature} with your {weapon}')
+
+# assignment statement: s = <expression>
+# print(<expression>)
 
 # Question 5: what happens when you run this code?
 # Try it with different inputs. In particular try a sword
