@@ -5,11 +5,21 @@
 # combined = my_string1 + my_string2
 # print(combined)
 
+# 3 + 4 = 7
+# coding numbers, strings, lists, 
+# what + does depends on the type on each side of the plus
+# if both are numbers, it adds them
+# if both are strings, it combines them: concatenation
+# if both are lists, it combines them: concatenation
+
 # Question 1:
 # Uncomment example A and run it. First predict what it will do.
+# -  It will print my_string1 and my_string2 right next to each other
 
 # Question 2:
 # Explain in your own words what the code in EXAMPLE A does.
+# - my_string1 and my_string 2 are assigned values and a new variable is created 
+# that adds both my_string1 and my_string2 together and then the final line prints it.
 
 # EXPLANATION
 # The + operator is used to combine strings. It is called
@@ -24,10 +34,10 @@
 # print(combined)
 
 # Uncomment example B and run it. First predict what it will do.
-
+# - it will print all of the values of both lists together (I was wrong)
 # Question 3:
 # Explain in your own words what the code in EXAMPLE B does.
-
+# - it prints both lists next to each other
 # EXPLANATION
 # The + operator is can also be used to combine lists. 
 # Note that it has *three* purposes: 
@@ -41,4 +51,7 @@
 # Make two new lists. Combine them and print the result.
 # Try combining them in the opposite order. What happens?
 
-
+my_list = [1,2,3,4,5]
+my_list2 = [6,7,8,9,10]
+combined = my_list2+ my_list
+print(combined)

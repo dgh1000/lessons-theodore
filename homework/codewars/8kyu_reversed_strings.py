@@ -69,7 +69,9 @@ def reverser(word):
         
         output_string = word[i] + output_string 
     return output_string
-print(reverser('abc'))
+# functions that return values are more flexible than functions
+# that print values
+print(reverser(reverser('abcdefg')))
 
 # Question #3: Explain what the code above does and why it's doing that.
 # In particular review what len(other_string) does.
