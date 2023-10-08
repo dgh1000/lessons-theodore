@@ -18,9 +18,9 @@ import arcade.csscolor as color
 # This should open the link in a new tab.
 
 arcade.open_window(600, 600, "My Arcade Game")
-arcade.set_background_color(color.BLACK) # black
+arcade.set_background_color(color.PERU) # black
 arcade.start_render()
-arcade.draw_rectangle_filled(300, 300, 50, 50, color.WHITE) # white
+arcade.draw_rectangle_filled(300, 300, 50, 50, color.LIGHT_PINK) # white
 arcade.finish_render()
 arcade.run()
 
@@ -30,4 +30,6 @@ arcade.run()
 # colors, finding them in the list at the link above. Try
 # at least three different colors for the background and three
 # different colors for the rectangle. What colors did you try?
-
+# - Indian red and azure
+# - Teal and light goldenrod yellow
+# - peru and light pink
